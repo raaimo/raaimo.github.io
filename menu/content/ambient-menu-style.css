@@ -1,0 +1,23 @@
+table {
+	width: 90%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size:18px;
+	font-weight: bold;
+	background-color:LightCyan;
+} 
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size:18px;
+	font-weight: bold;
+	background-color:LightCyan;
+}
+th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color:LightSkyBlue;
+}
+.menicka{
+	border: 1px solid black;
+}
