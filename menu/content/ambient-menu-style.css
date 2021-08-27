@@ -4,8 +4,6 @@ body {
 
 table {
 	width: 90%;
-	/*border: 1px solid black;
-	border-collapse: collapse;*/
 	font-size:18px;
 	font-weight: bold;
 	background-color:LightCyan;
@@ -18,9 +16,10 @@ th,td {
 	background-color:LightCyan;
 }
 th {
-	/*border: 0px solid black;
-	border-collapse: collapse;*/
-	background-color:Cyan;
+	background-color:PowderBlue;
+}
+a {
+	font-size:12px;
 }
 
 /*Kuta*/
