@@ -18,6 +18,7 @@ td {
 th {
 	background-color:#B0E0E6; /*PowderBlue */
 	font-size:22px;
+	font-weight: bold;
 }
 a {
 	font-size:12px;
