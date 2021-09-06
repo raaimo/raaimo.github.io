@@ -3,7 +3,7 @@ body {
 }
 
 table {
-	/*width: 90%;*/
+	width: 100%;
 	font-size:18px;
 	font-weight: bold;
 	background-color:LightCyan;
