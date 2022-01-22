@@ -32,7 +32,11 @@ em[title] {
 li {
 	list-style-type:none;
 }
+
+.poradi {
+	display:none;
+}
+
 .cena {
-	display:inline;
 	float:right;
 }
