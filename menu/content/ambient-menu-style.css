@@ -33,10 +33,17 @@ li {
 	list-style-type:none;
 }
 
-.poradi {
-	display:none;
+div.nadpis {
+	display:block;
+}
+div.cena {
+	float:right;
 }
 
-.cena {
-	float:right;
+div {
+	display:inline-block;
+}
+
+.poradi {
+	display:none;
 }
