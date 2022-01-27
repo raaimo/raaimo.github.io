@@ -50,4 +50,5 @@ div {
 /*Ledarny*/
 h5 {
 	display:inline;
+	text-decoration: underline;
 }
