@@ -1,5 +1,6 @@
 body {
 	background-color:LightCyan;
+	font-family: system-ui;
 }
 
 table {
@@ -7,6 +8,7 @@ table {
 	font-size:18px;
 	font-weight: bold;
 	background-color:LightCyan;
+	font-family: system-ui;
 } 
 td {
 	border: 0px solid black;
@@ -14,15 +16,18 @@ td {
 	/*font-size:18px;
 	font-weight: bold;*/
 	background-color:LightCyan;
+	font-family: system-ui;
 }
 th {
 	background-color:#B0E0E6; /*PowderBlue */
 	font-size:22px;
 	font-weight: bold;
+	font-family: system-ui;
 }
 a {
 	font-size:12px;
 	color:#20B2AA; /*LightSeaGreen*/
+	font-family: system-ui;
 }
 
 /*Kuta*/
