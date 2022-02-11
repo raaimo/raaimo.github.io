@@ -3,6 +3,10 @@ body {
 	font-family: system-ui;
 }
 
+strong{
+	font-weight:normal;
+  }
+  
 table {
 	width: 90%;
 	font-size:18px;
@@ -56,4 +60,7 @@ div {
 h5 {
 	display:inline;
 	text-decoration: underline;
+	font-family: system-ui;
+	font-size:medium;
+	font-weight:normal;
 }
