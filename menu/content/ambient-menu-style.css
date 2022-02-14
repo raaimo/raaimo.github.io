@@ -3,7 +3,7 @@
 	body {
 		background-color:LightCyan;
 		font-family: system-ui;
-		font-size:2vw;
+		font-size:1vw;
 	}
 
 	table {
@@ -11,25 +11,25 @@
 		font-weight: bold;
 		background-color:LightCyan;
 		font-family: system-ui;
-		font-size:2vw;
+		font-size:1vw;
 	} 
 	td {
 		border: 0px solid black;
 		border-collapse: collapse;
 		background-color:LightCyan;
 		font-family: system-ui;
-		font-size:2vw;
+		font-size:1vw;
 	}
 	th {
 		background-color:#B0E0E6; /*PowderBlue */
 		font-weight: bold;
 		font-family: system-ui;
-		font-size:2vw;
+		font-size:1vw;
 	}
 	a {
 		color:#20B2AA; /*LightSeaGreen*/
 		font-family: system-ui;
-		font-size:2vw;
+		font-size:1vw;
 	}
 
 	/*Kuta*/
@@ -38,7 +38,7 @@
 	}
 	li {
 		list-style-type:none;
-		font-size:2vw;
+		font-size:1vw;
 	}
 
 	div.nadpis {
@@ -90,7 +90,7 @@
 
 	th {
 		/* background-color:#B0E0E6; */ /*PowderBlue */
-		background-color:dodgerblue; 
+		background-color:deepskyblue; 
 		font-weight: bold;
 		font-family: system-ui;
 		font-size:4vw;
