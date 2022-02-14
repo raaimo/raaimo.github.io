@@ -1,7 +1,7 @@
 body {
 	background-color:LightCyan;
 	font-family: system-ui;
-	font-size:4vw;
+	font-size:3vw;
 }
 
 /*
@@ -10,28 +10,35 @@ strong{
   }
  */
 
+/*
+  p {
+	font-family: system-ui;
+	font-size:4vw;
+}
+*/
+
 table {
-	width: 90%;
+	width: 100%;
 	font-weight: bold;
 	background-color:LightCyan;
 	font-family: system-ui;
-	font-size:4vw;
+	font-size:3vw;
 } 
 td {
 	border: 0px solid black;
 	border-collapse: collapse;
 	background-color:LightCyan;
 	font-family: system-ui;
-	font-size:4vw;
+	font-size:3vw;
 }
 th {
 	background-color:#B0E0E6; /*PowderBlue */
 	font-weight: bold;
 	font-family: system-ui;
-	font-size:3vw;
+	font-size:4vw;
 }
 a {
-	font-size:4vw;
+	font-size:3vw;
 	color:#20B2AA; /*LightSeaGreen*/
 	font-family: system-ui;
 }
@@ -42,7 +49,7 @@ em[title] {
 }
 li {
 	list-style-type:none;
-	font-size:4vw;
+	font-size:3vw;
 }
 
 div.nadpis {
@@ -64,6 +71,6 @@ h5 {
 	display:inline;
 	text-decoration: underline;
 	font-family: system-ui;
-	font-size:2vw;
+	font-size:3vw;
 	/* font-weight:normal; */
 }
