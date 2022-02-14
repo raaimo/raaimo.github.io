@@ -7,7 +7,7 @@
 	}
 
 	table {
-		width: 90%;
+		width: 100%;
 		font-weight: bold;
 		background-color:LightCyan;
 		font-family: system-ui;
@@ -67,15 +67,15 @@
 /*### Small Screen ###*/
 @media only screen and (max-width: 960px) {
 	body {
-		background-color:LightCyan;
+		background-color:rgb(224, 226, 255);
 		font-family: system-ui;
 		font-size:4vw;
 	}
 
 	table {
-		width: 90%;
+		width: 100%;
 		font-weight: bold;
-		background-color:LightCyan;
+		background-color:rgb(224, 226, 255);
 		font-family: system-ui;
 		font-size:4vw;
 	} 
