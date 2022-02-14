@@ -1,6 +1,7 @@
 body {
 	background-color:LightCyan;
 	font-family: system-ui;
+	font-size:2vw;
 }
 
 /*
@@ -11,7 +12,7 @@ strong{
 
 table {
 	width: 90%;
-	font-size:1vw;
+	font-size:2vw;
 	font-weight: bold;
 	background-color:LightCyan;
 	font-family: system-ui;
@@ -24,12 +25,12 @@ td {
 }
 th {
 	background-color:#B0E0E6; /*PowderBlue */
-	font-size:2vw;
+	font-size:3vw;
 	font-weight: bold;
 	font-family: system-ui;
 }
 a {
-	font-size:1vw;
+	font-size:2vw;
 	color:#20B2AA; /*LightSeaGreen*/
 	font-family: system-ui;
 }
@@ -39,6 +40,7 @@ em[title] {
 	display:none;
 }
 li {
+	font-size:2vw;
 	list-style-type:none;
 }
 
@@ -61,6 +63,6 @@ h5 {
 	display:inline;
 	text-decoration: underline;
 	font-family: system-ui;
-	font-size:1vw;
+	font-size:2vw;
 	/* font-weight:normal; */
 }
