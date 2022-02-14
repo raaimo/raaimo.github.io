@@ -1,5 +1,5 @@
 /*### Large Screen ###*/
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1080px) {
 	body {
 		background-color:LightCyan;
 		font-family: system-ui;
@@ -65,7 +65,7 @@
 }
 
 /*### Small Screen ###*/
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1080px) {
 	body {
 		background-color:rgb(224, 226, 255);
 		font-family: system-ui;
@@ -89,7 +89,8 @@
 	}
 
 	th {
-		background-color:#B0E0E6; /*PowderBlue */
+		/* background-color:#B0E0E6; */ /*PowderBlue */
+		background-color:#e2b0e6; 
 		font-weight: bold;
 		font-family: system-ui;
 		font-size:4vw;
