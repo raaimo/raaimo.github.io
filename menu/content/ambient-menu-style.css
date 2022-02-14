@@ -11,7 +11,7 @@ strong{
 
 table {
 	width: 90%;
-	font-size:18px;
+	font-size:1vw;
 	font-weight: bold;
 	background-color:LightCyan;
 	font-family: system-ui;
@@ -19,19 +19,17 @@ table {
 td {
 	border: 0px solid black;
 	border-collapse: collapse;
-	/*font-size:18px;
-	font-weight: bold;*/
 	background-color:LightCyan;
 	font-family: system-ui;
 }
 th {
 	background-color:#B0E0E6; /*PowderBlue */
-	font-size:22px;
+	font-size:2vw;
 	font-weight: bold;
 	font-family: system-ui;
 }
 a {
-	font-size:12px;
+	font-size:1vw;
 	color:#20B2AA; /*LightSeaGreen*/
 	font-family: system-ui;
 }
@@ -63,6 +61,6 @@ h5 {
 	display:inline;
 	text-decoration: underline;
 	font-family: system-ui;
-	font-size:medium;
+	font-size:1vw;
 	/* font-weight:normal; */
 }
