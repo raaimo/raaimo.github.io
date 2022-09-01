@@ -69,6 +69,10 @@
 		font-family: system-ui;
 		font-size:1vw;
 	}
+	input {
+  		display:none;
+	}
+
 }
 
 /*### Small Screen ###*/
@@ -147,6 +151,9 @@
 		text-decoration: underline;
 		font-family: system-ui;
 		font-size:1vw;
+	}
+	input {
+  		display:none;
 	}
 
 }
