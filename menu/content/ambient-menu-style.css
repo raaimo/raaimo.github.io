@@ -62,6 +62,13 @@
 		font-family: system-ui;
 		font-size:1vw;
 	}
+	/*Mattes*/
+	h2 {
+		display:inline;
+		text-decoration: underline;
+		font-family: system-ui;
+		font-size:1vw;
+	}
 }
 
 /*### Small Screen ###*/
@@ -134,4 +141,12 @@
 		font-size:2vw;
 		/* font-weight:normal; */
 	}
+	/*Mattes*/
+	h2 {
+		display:inline;
+		text-decoration: underline;
+		font-family: system-ui;
+		font-size:1vw;
+	}
+
 }
