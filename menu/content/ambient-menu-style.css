@@ -31,6 +31,10 @@
 		font-family: system-ui;
 		font-size:1vw;
 	}
+	
+	img {
+    		display: none;
+	}
 
 	/*Kuta*/
 	em[title] {
@@ -111,6 +115,10 @@
 		font-size:4vw;
 		color:#20B2AA; /*LightSeaGreen*/
 		font-family: system-ui;
+	}
+
+	img {
+    		display: none;
 	}
 
 	/*Kuta*/
