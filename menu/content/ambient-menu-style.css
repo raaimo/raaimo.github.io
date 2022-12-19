@@ -35,7 +35,12 @@
 	img {
     		display: none;
 	}
-
+	
+	/*Liska Bistrouska*/
+	div.page p {
+		display:inline;
+	}
+	
 	/*Kuta*/
 	em[title] {
 		display:none;
@@ -121,6 +126,11 @@
     		display: none;
 	}
 
+	/*Liska Bistrouska*/
+	div.page p {
+		display:inline;
+	}
+	
 	/*Kuta*/
 	em[title] {
 		display:none;
