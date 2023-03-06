@@ -36,12 +36,35 @@
     		display: none;
 	}
 	
-	/*Liska Bistrouska
-	div.page p {
-		display:inline;
-	}
-	*/
-	
+	/*Liska Bistrouska*/
+	.page {
+		max-width: 50em;
+	  }
+	  .page p {
+		margin: 0;
+	  }
+  
+	  .page > div {
+		margin-top: 0;
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > p:first-child {
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > div {
+		margin-top: 0;
+	  }
+  
+	  .page > div > div > p:first-child {
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > div > p {
+		margin: 0;
+	  }
+	  
 	/*Kuta*/
 	em[title] {
 		display:none;
@@ -127,12 +150,36 @@
     		display: none;
 	}
 
-	/*Liska Bistrouska
-	div.page p {
-		display:inline;
-	}
-	*/
-	/*Kuta*/
+	/*Liska Bistrouska*/
+	.page {
+		max-width: 50em;
+	  }
+	  .page p {
+		margin: 0;
+	  }
+  
+	  .page > div {
+		margin-top: 0;
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > p:first-child {
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > div {
+		margin-top: 0;
+	  }
+  
+	  .page > div > div > p:first-child {
+		margin-bottom: 0;
+	  }
+  
+	  .page > div > div > p {
+		margin: 0;
+	  }
+
+	  /*Kuta*/
 	em[title] {
 		display:none;
 	}
