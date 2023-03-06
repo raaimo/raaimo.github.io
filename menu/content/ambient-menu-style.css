@@ -36,10 +36,11 @@
     		display: none;
 	}
 	
-	/*Liska Bistrouska*/
+	/*Liska Bistrouska
 	div.page p {
 		display:inline;
 	}
+	*/
 	
 	/*Kuta*/
 	em[title] {
@@ -126,11 +127,11 @@
     		display: none;
 	}
 
-	/*Liska Bistrouska*/
+	/*Liska Bistrouska
 	div.page p {
 		display:inline;
 	}
-	
+	*/
 	/*Kuta*/
 	em[title] {
 		display:none;
