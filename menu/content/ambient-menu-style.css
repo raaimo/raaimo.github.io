@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1280px) {
 	body {
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 
@@ -10,25 +10,25 @@
 		width: 100%;
 		font-weight: bold;
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	} 
 	td {
 		border: 0px solid black;
 		border-collapse: collapse;
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	th {
 		background-color:#B0E0E6; /*PowderBlue */
 		font-weight: bold;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	a {
 		color:#20B2AA; /*LightSeaGreen*/
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	
@@ -92,14 +92,14 @@
 	h5 {
 		display:inline;
 		text-decoration: underline;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	/*Mattes*/
 	h2 {
 		display:inline;
 		text-decoration: underline;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	input {
@@ -112,7 +112,7 @@
 @media only screen and (max-width: 1280px) {
 	body {
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:4vw;
 	}
 
@@ -120,7 +120,7 @@
 		width: 100%;
 		font-weight: bold;
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:4vw;
 	} 
 
@@ -128,7 +128,7 @@
 		border: 0px solid black;
 		border-collapse: collapse;
 		background-color:LightCyan;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:4vw;
 	}
 
@@ -136,14 +136,14 @@
 		/* background-color:#B0E0E6; */ /*PowderBlue */
 		background-color:lightskyblue; 
 		font-weight: bold;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:4vw;
 	}
 
 	a {
 		font-size:4vw;
 		color:#20B2AA; /*LightSeaGreen*/
-		font-family: system-ui;
+		font-family: Verdana;
 	}
 
 	img {
@@ -207,7 +207,7 @@
 	h5 {
 		display:inline;
 		text-decoration: underline;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:2vw;
 		/* font-weight:normal; */
 	}
@@ -215,7 +215,7 @@
 	h2 {
 		display:inline;
 		text-decoration: underline;
-		font-family: system-ui;
+		font-family: Verdana;
 		font-size:1vw;
 	}
 	input {
