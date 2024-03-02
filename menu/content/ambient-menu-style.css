@@ -105,6 +105,27 @@
 	input {
   		display:none;
 	}
+	
+	/*U Cejpu*/
+	table.list.js-bookmark-block td.volume {
+		display: none;
+	}
+	span.allergen {
+    	display: none;
+	}
+	td.name .title, td.name .desc {
+		display: inline; /* Makes both elements inline, so they appear on the same line */
+		margin-right: 5px; /* Optional: Adds a small space between the title and description */
+	}
+	table.list.js-bookmark-block {
+		/*display:inline;
+		text-decoration: underline;*/
+		font-family: Verdana;
+		font-size:1vw;
+		/*width: 100%; */
+		/* Add more styles as needed */
+	}
+	
 
 }
 
@@ -220,6 +241,26 @@
 	}
 	input {
   		display:none;
+	}
+	
+	/*U Cejpu*/
+	table.list.js-bookmark-block td.volume {
+		display: none;
+	}
+	span.allergen {
+    	display: none;
+	}
+	td.name .title, td.name .desc {
+		display: inline; /* Makes both elements inline, so they appear on the same line */
+		margin-right: 5px; /* Optional: Adds a small space between the title and description */
+	}
+	table.list.js-bookmark-block {
+		/*display:inline;
+		text-decoration: underline;*/
+		font-family: Verdana;
+		font-size:1vw;
+		/*width: 100%; */
+		/* Add more styles as needed */
 	}
 
 }
