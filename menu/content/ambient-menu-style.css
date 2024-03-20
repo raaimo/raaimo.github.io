@@ -154,6 +154,13 @@
 		/* Add more styles as needed */
 	}
 	
+	/* Jidelna zelený pruh */
+	.tribe-events-calendar-list {
+		/*background-color: blue;*/
+		font-family: Verdana;
+		font-size:1vw;
+	}	
+
 
 }
 
@@ -290,5 +297,12 @@
 		/*width: 100%; */
 		/* Add more styles as needed */
 	}
+	
+	/* Jidelna zelený pruh */
+	.tribe-events-calendar-list {
+		/*background-color: blue;*/
+		font-family: Verdana;
+		font-size:1vw;
+	}	
 
 }
