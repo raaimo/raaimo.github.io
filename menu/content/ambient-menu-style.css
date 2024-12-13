@@ -382,3 +382,52 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Landscape mode optimization */
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+    body {
+        padding-top: 70px; /* Reduced padding for landscape */
+    }
+
+    #lunchbar {
+        position: fixed;
+        top: 40px;
+        height: auto;
+        max-height: 40px; /* Limit height in landscape */
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    #lunchbar ul {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 4px 8px;
+        margin: 0;
+    }
+
+    #lunchbar ul li {
+        flex: 0 0 auto;
+        margin-right: 8px;
+    }
+
+    #lunchbar ul li a {
+        padding: 6px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .festive-banner {
+        padding: 6px; /* Smaller padding in landscape */
+        font-size: 0.85em;
+    }
+
+    /* Adjust content area */
+    table {
+        margin-top: 10px;
+    }
+
+    small {
+        margin-top: 30px;
+    }
+}
