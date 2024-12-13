@@ -331,3 +331,32 @@
 	}	
 
 }
+
+.poctiva-menu {
+    font-family: Verdana;
+    font-size: 1vw;
+}
+
+.poctiva-menu h3 {
+    color: #20B2AA;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.menu-item {
+    margin: 10px 0;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-desc {
+    color: #666;
+    margin: 2px 0;
+}
+
+.item-price {
+    color: #20B2AA;
+    font-weight: bold;
+}
