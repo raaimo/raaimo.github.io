@@ -386,17 +386,21 @@ html {
 /* Landscape mode optimization */
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
     body {
-        padding-top: 70px; /* Reduced padding for landscape */
+        padding-top: 70px;
     }
 
     #lunchbar {
         position: fixed;
         top: 40px;
+        left: 0;
+        width: 100%;
         height: auto;
-        max-height: 40px; /* Limit height in landscape */
+        max-height: 40px;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
+        padding: 0;
+        margin: 0;
     }
 
     #lunchbar ul {
@@ -404,6 +408,7 @@ html {
         flex-wrap: nowrap;
         padding: 4px 8px;
         margin: 0;
+        width: 100%;
     }
 
     #lunchbar ul li {
@@ -411,14 +416,19 @@ html {
         margin-right: 8px;
     }
 
+    #lunchbar ul li:last-child {
+        margin-right: 16px;
+    }
+
     #lunchbar ul li a {
         padding: 6px 12px;
         font-size: 13px;
         white-space: nowrap;
+        display: block;
     }
 
     .festive-banner {
-        padding: 6px; /* Smaller padding in landscape */
+        padding: 6px;
         font-size: 0.85em;
     }
 
