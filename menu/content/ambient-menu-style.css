@@ -1,11 +1,50 @@
 :root {
     --primary-color: #20B2AA;
     --secondary-color: #B0E0E6;
-    --background-color: #f5f5f5;
+    --background-color: #e8e8e8;
     --text-color: #333;
+    --card-background: #f8f8f8;
+    --table-background: #f0f0f0;
+    --table-row-hover: #e8e8e8;
+    --border-color: #ddd;
+    --festive-green-light: #7AB800;
+    --festive-green-dark: #3c8d0d;
 }
 
-/*### Large Screen ###*/
+/* Festive Banner Styles */
+.festive-banner {
+    background: linear-gradient(45deg, var(--festive-green-dark), var(--festive-green-light));
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: festiveGradient 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+.festive-banner span {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    font-size: 1.1em;
+}
+
+@keyframes festiveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Large Screen Adjustments */
 @media only screen and (min-width: 1280px) {
     body {
         background-color: var(--background-color);
@@ -13,13 +52,14 @@
         font-size: 1vw;
         line-height: 1.6;
         color: var(--text-color);
+        padding-top: 50px;
     }
 
     /* Navigation Styling */
     #lunchbar {
         position: sticky;
-        top: 0;
-        background-color: white;
+        top: 40px;
+        background-color: var(--card-background);
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         z-index: 1000;
         padding: 1rem 0;
@@ -60,7 +100,7 @@
     table {
         width: 100%;
         font-weight: bold;
-        background-color: white;
+        background-color: var(--table-background);
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         margin: 2rem 0;
@@ -72,6 +112,7 @@
         border-collapse: collapse;
         padding: 0.8rem;
         line-height: 1.4;
+        background-color: var(--table-background);
     }
 
     th {
@@ -79,6 +120,10 @@
         color: white;
         padding: 1rem;
         font-weight: bold;
+    }
+
+    tr:hover {
+        background-color: var(--table-row-hover);
     }
 
     /* Link Styling */
@@ -96,11 +141,12 @@
         padding: 0.5rem 0;
         border-bottom: 1px solid #eee;
         transition: transform 0.2s ease;
+        background-color: var(--table-background);
     }
 
     .menu-item:hover {
         transform: translateX(10px);
-        background-color: #f9f9f9;
+        background-color: var(--table-row-hover);
     }
 
     .menu-item:last-child {
@@ -116,7 +162,7 @@
     .restaurant-section {
         margin: 2rem 0;
         padding: 1rem;
-        background-color: white;
+        background-color: var(--card-background);
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
@@ -133,6 +179,8 @@
         color: #666;
         text-align: right;
         padding: 0.5rem;
+        display: block;
+        margin-top: 45px;
     }
 
     /* Hide images as in original code */
@@ -141,57 +189,177 @@
     }
 }
 
-/*### Small Screen ###*/
+/* Small Screen Adjustments */
 @media only screen and (max-width: 1280px) {
+    /* Improved base styles for mobile */
     body {
         background-color: var(--background-color);
         font-family: Verdana;
-        font-size: 3.5vw;
+        font-size: 16px; /* Changed from vw to fixed size for better readability */
         line-height: 1.6;
+        padding: 0;
+        margin: 0;
+        padding-top: 90px;
     }
 
+    /* Enhanced mobile navigation */
+    #lunchbar {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: var(--card-background);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 0;
+    }
+
+    #lunchbar ul {
+        display: flex;
+        padding: 8px;
+        margin: 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    #lunchbar ul::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+    }
+
+    #lunchbar ul li {
+        flex: 0 0 auto;
+        margin-right: 8px;
+    }
+
+    #lunchbar ul li a {
+        padding: 8px 16px;
+        background-color: #ebebeb;
+        border-radius: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+
+    #lunchbar ul li a:active {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    /* Adjust content spacing for fixed header */
+    body {
+        padding-top: 60px;
+    }
+
+    /* Enhanced table styling for mobile */
     table {
         width: 100%;
-        margin: 1rem 0;
-        background-color: white;
-        border-radius: 8px;
+        margin: 8px 0;
+        background-color: var(--table-background);
+        border-radius: 12px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    td {
-        border: 0px solid black;
-        border-collapse: collapse;
-        padding: 0.8rem;
+        border-spacing: 0;
     }
 
     th {
-        background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
-        color: white;
-        font-weight: bold;
+        padding: 16px;
+        font-size: 18px;
+        text-align: left;
     }
 
-    #lunchbar {
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 1rem 0;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    td {
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--border-color);
+        background-color: var(--table-background);
     }
 
-    /* Preserve existing mobile-specific styles */
-    img {
-        display: none;
-    }
-
-    /* Additional mobile optimizations */
+    /* Menu item improvements */
     .menu-item {
-        padding: 0.5rem 0;
-        border-bottom: 1px solid #eee;
+        padding: 12px 16px;
+        margin: 8px 0;
+        background-color: var(--table-background);
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
     .item-price {
+        font-size: 16px;
         font-weight: bold;
         color: var(--primary-color);
+        float: right;
+    }
+
+    /* Restaurant section spacing */
+    .restaurant-section {
+        margin: 16px 8px;
+        padding: 16px;
+        background-color: var(--card-background);
+        border-radius: 12px;
+    }
+
+    /* Last update positioning */
+    .last-update {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(248, 248, 248, 0.95);
+        padding: 8px;
+        font-size: 12px;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Menu categories */
+    .border_box_title {
+        background-color: var(--table-row-hover);
+        padding: 8px 16px;
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+
+    /* Price and weight styling */
+    .menuPrice, .menuWeight {
+        font-size: 14px;
+        color: var(--primary-color);
+    }
+
+    /* Add touch feedback */
+    .menu-item:active {
+        background-color: var(--table-row-hover);
+        transform: scale(0.98);
+    }
+
+    /* Improve link tap targets */
+    a {
+        padding: 8px 0;
+        display: inline-block;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Restaurant links in header */
+    th a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    th a:active {
+        opacity: 1;
+    }
+
+    .festive-banner {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    small {
+        display: block;
+        margin-top: 40px;
     }
 }
 
@@ -209,3 +377,8 @@
 
 /* Additional specific restaurant styles preserved from original */
 /* ... (keep all other specific restaurant styles as they were) ... */
+
+/* Add smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
