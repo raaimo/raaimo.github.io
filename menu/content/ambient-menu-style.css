@@ -206,26 +206,36 @@
     /* Enhanced mobile navigation */
     #lunchbar {
         position: fixed;
-        top: 40px;
+        top: 0;
         left: 0;
         width: 100%;
         background-color: var(--card-background);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         z-index: 1000;
-        padding: 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .info-bar {
+        width: 100%;
+        padding: 4px;
+        font-size: 11px;
+        background-color: var(--background-color);
+        border-bottom: 1px solid var(--border-color);
     }
 
     #lunchbar ul {
         display: flex;
-        padding: 8px;
-        margin: 0;
+        flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
+        padding: 8px;
+        margin: 0;
+        width: auto;
+        min-width: 100%;
     }
 
     #lunchbar ul::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Edge */
+        display: none;
     }
 
     #lunchbar ul li {
@@ -233,18 +243,17 @@
         margin-right: 8px;
     }
 
-    #lunchbar ul li a {
-        padding: 8px 16px;
-        background-color: #ebebeb;
-        border-radius: 20px;
-        white-space: nowrap;
-        font-size: 14px;
-        color: var(--text-color);
+    #lunchbar ul li:last-child {
+        margin-right: 16px; /* Extra space at the end for better scrolling */
     }
 
-    #lunchbar ul li a:active {
-        background-color: var(--primary-color);
-        color: white;
+    #lunchbar ul li a {
+        white-space: nowrap;
+        padding: 8px 12px;
+        display: block;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        font-size: 13px;
     }
 
     /* Adjust content spacing for fixed header */
@@ -570,4 +579,35 @@ html {
 /* Remove the old small styling since we're not using it anymore */
 small {
     display: none;
+}
+
+/* Visitor Counter Styles */
+.visitor-counter {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--card-background);
+}
+
+.visitor-counter img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.visitor-counter img:hover {
+    opacity: 1;
+}
+
+/* Very small screens additional adjustments */
+@media only screen and (max-width: 320px) {
+    #lunchbar ul li a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .info-bar {
+        font-size: 10px;
+        padding: 3px;
+    }
 }
