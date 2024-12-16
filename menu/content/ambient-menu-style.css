@@ -361,6 +361,25 @@
         display: block;
         margin-top: 40px;
     }
+
+    /* Last update and weather info styling */
+    small {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(248, 248, 248, 0.95);
+        padding: 8px;
+        font-size: 12px;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* Ensure content doesn't get hidden behind the fixed small element */
+    body {
+        margin-bottom: 40px;
+    }
 }
 
 /* Preserve existing specific restaurant styles */
@@ -386,13 +405,13 @@ html {
 /* Landscape mode optimization */
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
     body {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     .festive-banner {
         padding: 4px;
         font-size: 0.8em;
-        height: 20px;
+        height: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -400,11 +419,11 @@ html {
 
     #lunchbar {
         position: fixed;
-        top: 28px;
+        top: 32px;
         left: 0;
         width: 100vw;
-        height: 32px;
-        max-height: 32px;
+        height: 48px;
+        max-height: 48px;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
@@ -422,7 +441,7 @@ html {
     #lunchbar ul {
         display: flex;
         flex-wrap: nowrap;
-        padding: 2px 4px;
+        padding: 4px 8px;
         margin: 0;
         width: max-content;
         height: 100%;
@@ -431,51 +450,29 @@ html {
 
     #lunchbar ul li {
         flex: 0 0 auto;
-        margin-right: 4px;
-        height: 100%;
+        margin-right: 6px;
+        height: 36px;
     }
 
     #lunchbar ul li:last-child {
-        margin-right: 8px;
+        margin-right: 12px;
     }
 
     #lunchbar ul li a {
-        padding: 4px 8px;
-        font-size: 12px;
+        padding: 8px 12px;
+        font-size: 14px;
         white-space: nowrap;
         display: flex;
         align-items: center;
         height: 100%;
-        border-radius: 4px;
+        border-radius: 6px;
         background-color: #ebebeb;
     }
 
-    #lunchbar ul li a:active {
-        background-color: var(--primary-color);
-        color: white;
-    }
-
-    #lunchbar::after {
-        content: '';
-        position: fixed;
-        top: 28px;
-        right: 0;
-        width: 20px;
-        height: 32px;
-        background: linear-gradient(to right, transparent, var(--card-background));
-        pointer-events: none;
-    }
-
+    #lunchbar::after,
     #lunchbar::before {
-        content: '';
-        position: fixed;
-        top: 28px;
-        left: 0;
-        width: 20px;
-        height: 32px;
-        background: linear-gradient(to left, transparent, var(--card-background));
-        pointer-events: none;
-        z-index: 1;
+        top: 32px;
+        height: 48px;
     }
 
     table {
@@ -491,29 +488,32 @@ html {
 /* Additional optimization for very small heights */
 @media only screen and (max-width: 1280px) and (orientation: landscape) and (max-height: 450px) {
     body {
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     .festive-banner {
-        height: 16px;
-        font-size: 0.7em;
+        height: 20px;
     }
 
     #lunchbar {
-        top: 24px;
-        height: 26px;
-        max-height: 26px;
+        top: 28px;
+        height: 42px;
+        max-height: 42px;
+    }
+
+    #lunchbar ul li {
+        height: 32px;
     }
 
     #lunchbar ul li a {
-        font-size: 11px;
-        padding: 2px 6px;
+        font-size: 13px;
+        padding: 6px 10px;
     }
 
     #lunchbar::after,
     #lunchbar::before {
-        top: 24px;
-        height: 26px;
+        top: 28px;
+        height: 42px;
     }
 }
 
