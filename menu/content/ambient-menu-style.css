@@ -386,58 +386,141 @@ html {
 /* Landscape mode optimization */
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
     body {
-        padding-top: 70px;
+        padding-top: 60px;
+    }
+
+    .festive-banner {
+        padding: 4px;
+        font-size: 0.8em;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #lunchbar {
         position: fixed;
-        top: 40px;
+        top: 28px;
         left: 0;
-        width: 100%;
-        height: auto;
-        max-height: 40px;
+        width: 100vw;
+        height: 32px;
+        max-height: 32px;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
         padding: 0;
         margin: 0;
+        background-color: var(--card-background);
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    #lunchbar::-webkit-scrollbar {
+        display: none;
     }
 
     #lunchbar ul {
         display: flex;
         flex-wrap: nowrap;
-        padding: 4px 8px;
+        padding: 2px 4px;
         margin: 0;
-        width: 100%;
+        width: max-content;
+        height: 100%;
+        align-items: center;
     }
 
     #lunchbar ul li {
         flex: 0 0 auto;
-        margin-right: 8px;
+        margin-right: 4px;
+        height: 100%;
     }
 
     #lunchbar ul li:last-child {
-        margin-right: 16px;
+        margin-right: 8px;
     }
 
     #lunchbar ul li a {
-        padding: 6px 12px;
-        font-size: 13px;
+        padding: 4px 8px;
+        font-size: 12px;
         white-space: nowrap;
-        display: block;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-radius: 4px;
+        background-color: #ebebeb;
     }
 
-    .festive-banner {
-        padding: 6px;
-        font-size: 0.85em;
+    #lunchbar ul li a:active {
+        background-color: var(--primary-color);
+        color: white;
     }
 
-    /* Adjust content area */
+    #lunchbar::after {
+        content: '';
+        position: fixed;
+        top: 28px;
+        right: 0;
+        width: 20px;
+        height: 32px;
+        background: linear-gradient(to right, transparent, var(--card-background));
+        pointer-events: none;
+    }
+
+    #lunchbar::before {
+        content: '';
+        position: fixed;
+        top: 28px;
+        left: 0;
+        width: 20px;
+        height: 32px;
+        background: linear-gradient(to left, transparent, var(--card-background));
+        pointer-events: none;
+        z-index: 1;
+    }
+
     table {
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     small {
-        margin-top: 30px;
+        margin-top: 20px;
+        font-size: 11px;
     }
+}
+
+/* Additional optimization for very small heights */
+@media only screen and (max-width: 1280px) and (orientation: landscape) and (max-height: 450px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .festive-banner {
+        height: 16px;
+        font-size: 0.7em;
+    }
+
+    #lunchbar {
+        top: 24px;
+        height: 26px;
+        max-height: 26px;
+    }
+
+    #lunchbar ul li a {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+
+    #lunchbar::after,
+    #lunchbar::before {
+        top: 24px;
+        height: 26px;
+    }
+}
+
+/* Mattes Restaurant Specific Styles
+   --------------------------------
+   Hide email subscription and GDPR consent form 
+   that appears at the bottom of Mattes menu */
+#menubotsub {
+    display: none;
 }
