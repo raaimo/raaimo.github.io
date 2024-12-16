@@ -524,3 +524,22 @@ html {
 #menubotsub {
     display: none;
 }
+
+/* Base styles - applies to all resolutions */
+#menubotsub {
+    display: none !important;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1280px) {
+    #menubotsub {
+        display: none !important;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 1280px) {
+    #menubotsub {
+        display: none !important;
+    }
+}
