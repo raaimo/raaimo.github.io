@@ -232,6 +232,7 @@
         margin: 0;
         width: auto;
         min-width: 100%;
+        padding-right: 24px;
     }
 
     #lunchbar ul::-webkit-scrollbar {
@@ -244,7 +245,8 @@
     }
 
     #lunchbar ul li:last-child {
-        margin-right: 16px; /* Extra space at the end for better scrolling */
+        margin-right: 24px;
+        padding-right: 8px;
     }
 
     #lunchbar ul li a {
