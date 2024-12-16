@@ -64,6 +64,7 @@
         z-index: 1000;
         padding: 1rem 0;
         display: flex;
+        flex-direction: column;
         justify-content: left;
         flex-wrap: nowrap;
         width: 100%;
@@ -542,4 +543,31 @@ html {
     #menubotsub {
         display: none !important;
     }
+}
+
+.info-bar {
+    background-color: var(--card-background);
+    padding: 4px 8px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Landscape mode optimization */
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+    #lunchbar {
+        height: auto;
+        max-height: none;
+    }
+
+    .info-bar {
+        padding: 2px 8px;
+        font-size: 11px;
+    }
+}
+
+/* Remove the old small styling since we're not using it anymore */
+small {
+    display: none;
 }
