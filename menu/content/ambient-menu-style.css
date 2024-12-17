@@ -17,16 +17,26 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1em;
+    padding: 2px 8px;
     background-color: #4CAF50;
     color: white;
     text-align: center;
     z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-.festive-banner span {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+.festive-banner .holiday-message {
     font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.festive-banner .update-info {
+    font-size: 0.8em;
+    opacity: 0.9;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 2px;
 }
 
 @keyframes festiveGradient {
@@ -49,22 +59,18 @@
         font-size: 1vw;
         line-height: 1.6;
         color: var(--text-color);
-        padding-top: 90px;
+        padding-top: 42px;
+        margin: 0;
     }
 
     /* Navigation Styling */
     #lunchbar {
-        position: sticky;
-        top: 42px;
+        position: relative;
         background-color: var(--card-background);
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         z-index: 1000;
-        padding: 1rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        flex-wrap: nowrap;
         width: 100%;
+        margin-bottom: 0.5rem;
     }
 
     #lunchbar ul {
@@ -171,16 +177,6 @@
         border-bottom: 2px solid var(--primary-color);
     }
 
-    /* Last Update Styling */
-    .last-update {
-        font-style: italic;
-        color: #666;
-        text-align: right;
-        padding: 0.5rem;
-        display: block;
-        margin-top: 45px;
-    }
-
     /* Hide images as in original code */
     img {
         display: none;
@@ -197,23 +193,22 @@
         line-height: 1.6;
         padding: 0;
         margin: 0;
-        padding-top: 90px;
+        padding-top: 48px;
     }
 
     /* Enhanced mobile navigation */
     #lunchbar {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100%;
         background-color: var(--card-background);
         z-index: 1000;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 0.5rem;
     }
 
     .info-bar {
         position: fixed;
-        top: 20px;
+        top: 24px;
         left: 0;
         width: 100%;
         padding: 2px 8px;
@@ -315,19 +310,6 @@
         padding: 0.5rem;
         background-color: var(--card-background);
         border-radius: 12px;
-    }
-
-    /* Last update positioning */
-    .last-update {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(248, 248, 248, 0.95);
-        padding: 8px;
-        font-size: 12px;
-        text-align: center;
-        box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
     }
 
     /* Menu categories */
@@ -628,4 +610,110 @@ small {
         font-size: 10px;
         padding: 3px;
     }
+}
+
+/* Base styles for festive banner */
+.festive-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 8px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Large screens (desktop) */
+@media screen and (min-width: 1024px) {
+    .festive-banner .holiday-message {
+        font-size: 1.1em;
+    }
+    
+    .festive-banner .update-info {
+        font-size: 0.8em;
+    }
+    
+    body {
+        padding-top: 42px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1023px) {
+    .festive-banner .holiday-message {
+        font-size: 1em;
+    }
+    
+    .festive-banner .update-info {
+        font-size: 0.75em;
+    }
+    
+    body {
+        padding-top: 40px;
+    }
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 767px) {
+    .festive-banner {
+        padding: 1px 4px;
+    }
+    
+    .festive-banner .holiday-message {
+        font-size: 0.9em;
+    }
+    
+    .festive-banner .update-info {
+        font-size: 0.7em;
+    }
+    
+    body {
+        padding-top: 38px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 320px) {
+    .festive-banner .holiday-message {
+        font-size: 0.8em;
+    }
+    
+    .festive-banner .update-info {
+        font-size: 0.65em;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media screen and (max-height: 450px) and (orientation: landscape) {
+    .festive-banner {
+        padding: 1px 4px;
+    }
+    
+    .festive-banner .holiday-message {
+        font-size: 0.85em;
+    }
+    
+    .festive-banner .update-info {
+        font-size: 0.65em;
+    }
+    
+    body {
+        padding-top: 35px;
+    }
+}
+
+/* Common styles for all screen sizes */
+.festive-banner .holiday-message {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.festive-banner .update-info {
+    opacity: 0.9;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 2px;
 }
