@@ -216,10 +216,16 @@
 
     .info-bar {
         width: 100%;
-        padding: 4px;
-        font-size: 11px;
-        background-color: var(--background-color);
+        padding: 4px 8px;
+        font-size: 12px;
+        background-color: var(--card-background);
         border-bottom: 1px solid var(--border-color);
+        color: var(--text-color);
+        text-align: center;
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 1001;
     }
 
     #lunchbar ul {
@@ -260,7 +266,7 @@
 
     /* Adjust content spacing for fixed header */
     body {
-        padding-top: 60px;
+        padding-top: 110px;
     }
 
     /* Enhanced table styling for mobile */
@@ -391,6 +397,14 @@
     /* Ensure content doesn't get hidden behind the fixed small element */
     body {
         margin-bottom: 40px;
+    }
+}
+
+/* Portrait specific adjustments */
+@media only screen and (max-width: 1280px) and (orientation: portrait) {
+    .info-bar {
+        font-size: 11px;
+        padding: 3px 8px;
     }
 }
 
