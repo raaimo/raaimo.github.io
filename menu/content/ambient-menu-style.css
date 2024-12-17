@@ -13,18 +13,15 @@
 
 /* Festive Banner Styles */
 .festive-banner {
-    background: linear-gradient(45deg, var(--festive-green-dark), var(--festive-green-light));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 12px;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    animation: festiveGradient 3s ease infinite;
-    background-size: 200% 200%;
+    z-index: 1002;
 }
 
 .festive-banner span {
@@ -58,7 +55,7 @@
     /* Navigation Styling */
     #lunchbar {
         position: sticky;
-        top: 40px;
+        top: 42px;
         background-color: var(--card-background);
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         z-index: 1000;
@@ -215,8 +212,11 @@
     }
 
     .info-bar {
+        position: fixed;
+        top: 20px;
+        left: 0;
         width: 100%;
-        padding: 4px 8px;
+        padding: 2px 8px;
         font-size: 12px;
         background-color: var(--card-background);
         border-bottom: 1px solid var(--border-color);
