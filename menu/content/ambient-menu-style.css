@@ -592,13 +592,42 @@ small {
     background-color: var(--card-background);
 }
 
+.visitor-counter p {
+    margin: 0 0 10px 0;  /* Add space between text and counter */
+    color: var(--text-color);
+    font-size: 0.9em;    /* Slightly smaller than normal text */
+}
+
 .visitor-counter img {
+    display: inline-block !important;  /* Override the general img hiding */
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .visitor-counter img:hover {
     opacity: 1;
+}
+
+/* Responsive adjustments for visitor counter */
+@media only screen and (max-width: 1280px) {
+    .visitor-counter {
+        padding: 15px 0;
+        margin-top: 15px;
+    }
+    
+    .visitor-counter p {
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .visitor-counter {
+        padding: 10px 0;
+    }
+    
+    .visitor-counter p {
+        font-size: 0.8em;
+    }
 }
 
 /* Very small screens additional adjustments */
