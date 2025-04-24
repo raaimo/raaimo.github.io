@@ -590,74 +590,28 @@ small {
     margin-top: 20px;
     border-top: 1px solid var(--border-color);
     background-color: var(--card-background);
+    position: relative;
+    z-index: 1;
 }
 
 .visitor-counter p {
-    margin: 0 0 10px 0;  /* Add space between text and counter */
+    margin: 0 0 10px 0;
     color: var(--text-color);
-    font-size: 0.9em;    /* Slightly smaller than normal text */
+    font-size: 0.9em;
 }
 
 .visitor-counter img {
-    display: inline-block !important;  /* Override the general img hiding */
+    display: inline-block !important;
     opacity: 0.8;
     transition: opacity 0.3s ease;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .visitor-counter img:hover {
     opacity: 1;
-}
-
-/* Responsive adjustments for visitor counter */
-@media only screen and (max-width: 1280px) {
-    .visitor-counter {
-        padding: 15px 0;
-        margin-top: 15px;
-    }
-    
-    .visitor-counter p {
-        font-size: 0.85em;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .visitor-counter {
-        padding: 10px 0;
-    }
-    
-    .visitor-counter p {
-        font-size: 0.8em;
-    }
-}
-
-/* Very small screens additional adjustments */
-@media only screen and (max-width: 320px) {
-    #lunchbar ul li a {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    .info-bar {
-        font-size: 10px;
-        padding: 3px;
-    }
-}
-
-/* Base styles for festive banner */
-.festive-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2px 8px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    z-index: 1002;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Large screens (desktop) */
