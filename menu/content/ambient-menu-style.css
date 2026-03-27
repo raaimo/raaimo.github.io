@@ -11,6 +11,26 @@
     --festive-green-dark: #3c8d0d;
 }
 
+/* Meníčka.cz blocks (e.g. La Forchetta, Mates, Kuta): dish name and price on one line */
+.menicka li.jidlo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35em 1em;
+    list-style: none;
+}
+.menicka li.jidlo .polozka {
+    flex: 1 1 auto;
+    min-width: 10em;
+}
+.menicka li.jidlo .cena {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+.menicka li.jidlo .clear {
+    display: none;
+}
+
 /* Festive Banner Styles */
 .festive-banner {
     position: fixed;
